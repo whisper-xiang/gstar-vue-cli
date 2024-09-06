@@ -17,5 +17,6 @@
   "vueIndentScriptAndStyle": false,
   "endOfLine": "auto",
   "rangeStart": 0,
-  "rangeEnd": null
+  "rangeEnd": null,
+  "plugins": ["prettier-plugin-tailwindcss"]
 }
