@@ -17,6 +17,7 @@
     "build": "vue-tsc --noEmit && vite build --mode prod"
   },
   "dependencies": {
+    "cz-customizable": "^7.2.1",
     "element-plus": "^2.8.1",
     "pinia": "^2.2.2",
     "vue": "^3.4.37"
@@ -52,6 +53,11 @@
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "husky": {
+    "hooks": {
+      "prepare-commit-msg": "exec < /dev/tty && git cz --hook || true"
     }
   }
 }
